@@ -10,6 +10,8 @@
     $videonb = $d->rawQuery("select id from #_photo where noibat > 0 and type = ? and hienthi > 0",array('video'));
     $partner = $d->rawQuery("select ten$lang, link, photo from #_photo where type = ? and hienthi > 0 order by stt, id desc",array('doitac'));
 
+    $introduce = $d->rawQueryOne("select id, type, ten$lang, noidung$lang, mota$lang, photo, ngaytao, ngaysua from #_static where type = ? limit 0,1",array('gioi-thieu'));
+
     /* SEO */
     $seoDB = $seo->getSeoDB(0,'setting','capnhat','setting');
     $seo->setSeo('h1',$seoDB['title'.$seolang]);

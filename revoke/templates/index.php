@@ -21,8 +21,8 @@
 <link rel="stylesheet" type="text/css" href="../revoke/assets/css/main.css">
 
 
-<title>Trang Chủ</title>
-<link type="image/x-icon" rel="shortcut icon" href="http://duanaloha.com/themes/trananh/assets/images/favicon.ico">
+<title><?=$slogan['ten'.$lang]?></title>
+<link type="image/x-icon" rel="shortcut icon" href="<?=THUMBS?>/48x48x1/<?=UPLOAD_PHOTO_L.$favicon['photo']?>">
 <link rel="apple-touch-icon" href="http://duanaloha.com/media/favicon/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="57x57" href="http://duanaloha.com/media/favicon/apple-touch-icon-57x57-precomposed.png">
 <link rel="apple-touch-icon" sizes="72x72" href="http://duanaloha.com/media/favicon/apple-touch-icon-72x72-precomposed.png">
@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="row">
                     <div id="hlogo" class="col-md-3 col-xs-12">
-                        <p class="logo"><a href="./" title="Ve Chai Công Nghệ VECA"><img src="../revoke/assets/images/logo.png" alt="Bán ve chai - Tích lũy tiền"></a></p>
+                        <p class="logo"><a href="./" title="Ve Chai Công Nghệ VECA"><img src="<?=THUMBS?>/138x65x1/<?=UPLOAD_PHOTO_L.$logo['photo']?>" alt="Bán ve chai - Tích lũy tiền"></a></p>
                     </div>
               <div id="hmenu" class="col-md-9 col-xs-12">
                         <div id="nav-menu">
@@ -55,7 +55,7 @@
                                 <div class="nav-menu-inner">
                                     <ul id="navmainmenu">
                                         <li><a href="http://duanaloha.com/#sec_home"><span>Trang chủ</span></a></li>
-                                        <li><a href="http://duanaloha.com/#home_intro"><span>Giới thiệu</span></a></li>
+                                        <li><a href="http://duanaloha.com/#home_intro"><span><?=$introduce['ten'.$lang]?></span></a></li>
                                         <li><a href="http://duanaloha.com/#home_solution"><span>Giải pháp</span></a></li>
                                         <li><a href="http://duanaloha.com/#home_support"><span>Hướng dẫn</span></a></li>
                                         <li><a href="http://duanaloha.com/#home_register"><span>Đăng ký</span></a></li>
@@ -100,15 +100,13 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="intro_left">
                         <div class="animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.2s" style="animation-duration: 1s; animation-delay: 0.2s; visibility: hidden;">
-                            <h2>Ve chai công nghệ</h2>
+                            <h2><?=$introduce['mota'.$lang]?></h2>
                         </div>
                         <div class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.3s" style="animation-duration: 1s; animation-delay: 0.3s; visibility: hidden;">
                             <div class="_content">
                                 <div class="module  notitle" id="yw0">
                                     <div class="module-content full_height">
-                                        <p>VECA là ứng dụng thu mua ve chai cài đặt trên điện thại di động. Người có nhu cầu bán có thể dùng ứng dụng này để đặt thu gom (nhựa, giấy, nhôm, sắt,...) và đợi người mua đến thu. Giá cả sẽ hiển thị trên ứng dụng và do thị trường quyết định. Khách hàng sẽ nhận tiền bán ve chai vào tài khoản VECA, và có thể chuyển ra tài khoản ví điện tử MOMO của mình. Bạn không mất phí khi mua bán phế liệu với app VECA.</p>
-                                        <p>Ứng dụng VECA giúp kết nối những Người thu mua ve chai muốn tăng thêm thu nhập với Người bán và Vựa, từ đó tạo ra lợi ích cho các bên, đồng thời góp phần giải quyết được vấn đề Phân loại rác tại Việt Nam.</p>
-                                        
+                                        <p><?=$introduce['noidung'.$lang]?></p>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="intro_img"><img src="../revoke/assets/images/intro_icon1.png" alt="Phân loại rác thãi" /></div>
@@ -135,7 +133,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="row">
-                        <div class="flex_cell full_height">
+                        <div class="flex_cell full_height" style="background-image: url(<?=THUMBS?>/942x1080x2/<?=UPLOAD_NEWS_L.$introduce['photo']?>);">
                             <div class="flex_cell_inner">
                                 <div class="_hotline">
                                     <div class="animate" data-animate="swing" data-duration="1.0s" data-delay="0.4s" style="animation-duration: 1s; animation-delay: 0.4s; visibility: hidden;">
@@ -220,7 +218,9 @@
                 <div class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.2s" style="animation-duration: 1s; animation-delay: 0.2s; visibility: hidden;">
                     <div class="row_ container">
                         <h2>Thông tin liên hệ</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.172468205165!2d106.67590731428719!3d10.7980992617472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d64937163d%3A0x40e9e1edf53eafaa!2zUDE1LCAxNTgvMTQgVHLhuqduIEh1eSBMaeG7h3UsIHBoxrDhu51uZyA4LCBQaMO6IE5odeG6rW4sIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1613917043448!5m2!1svi!2s" style="width:100%; border:0; padding-bottom:10px; height:450px;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="footer-map" allowfullscreen="" loading="lazy">
+                            <?php echo htmlspecialchars_decode($optsetting['toado_iframe']); ?>
+                        </div>
                         <div class="content_bx_reg">
                             <form name="frmreg" class="form-horizontal" id="frmregisgerreceived" action="http://duanaloha.com/" method="post">
                                 <input type="hidden" value="38f7748e711e5744c90ac6894a028308f64f76a6" name="attoken">
@@ -259,8 +259,8 @@
                 <div class="pull-left">
                     <div class="module  notitle" id="yw22">
                         <div class="module-content">
-                            <p style="text-align: center;">&copy; 2021 Ve Chai Công Nghệ VECA. ALL RIGHTS RESERVED</p>
-                            <p style="text-align: center;">HOTLINE 0902 14 03 82</p>
+                            <p style="text-align: center;">&copy; <?=$footer['ten'.$lang]?></p>
+                            <p style="text-align: center;">&copy; <?=$footer['noidung'.$lang]?></p>
                         </div>
                     </div>
                 </div>
@@ -269,9 +269,9 @@
                         <div class="module  notitle" id="yw23">
                             <div class="module-content">
                                 <p>
-                                    <img alt="" src="../revoke/assets/images/face book.png"> 
-                                    <img alt="" src="../revoke/assets/images/gplus.png"> 
-                                    <img alt="" src="../revoke/assets/images/twitter.png">
+                                    <?php foreach ($social as $s){ ?>
+                                       <img alt="" src="<?=THUMBS?>/356x349x1/<?=UPLOAD_PHOTO_L.$s['photo']?>"> 
+                                    <?php } ?>
                                 </p>
                             </div>
                         </div>
